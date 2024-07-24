@@ -16,19 +16,19 @@ def is_enabled(value, default):
 
 # Mandatory variables for the bot to start
 # API ID from https://my.telegram.org/auth
-API_ID = int(os.environ.get("API_ID","12345678"))
+API_ID = int(os.environ.get("API_ID","2646548"))
 # API Hash from https://my.telegram.org/auth
-API_HASH = os.environ.get("API_HASH","11111111111111111111111111")
-BOT_TOKEN = os.environ.get("BOT_TOKEN","")  # Bot token from @BotFather
+API_HASH = os.environ.get("API_HASH","72e5b96d9aa943df98ec71241b11c7ac")
+BOT_TOKEN = os.environ.get("BOT_TOKEN","7155790776:AAGkH6KYhA4wY6VsoY2EPdWfOUKaIU4KCYA")  # Bot token from @BotFather
 ADMINS = (
     [int(i.strip()) for i in os.environ.get("ADMINS").split(",")]
     if os.environ.get("ADMINS")
     else []
 )
 
-DATABASE_NAME = os.environ.get("DATABASE_NAME", "DemoBot")
+DATABASE_NAME = os.environ.get("DATABASE_NAME", "AlphaShortBot")
 DATABASE_URL = os.environ.get(
-    "DATABASE_URL", ""
+    "DATABASE_URL", "mongodb+srv://gamingmasterking007:ZK5HX30GO84Iah0q@alphashortbot.5kbpaiy.mongodb.net/?retryWrites=true&w=majority&appName=AlphaShortBot"
 )  # mongodb uri from https://www.mongodb.com/
 OWNER_ID = int(os.environ.get("OWNER_ID", "872623545"))  # id of the owner
 ADMINS.append(OWNER_ID) if OWNER_ID not in ADMINS else []
